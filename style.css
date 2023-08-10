@@ -44,3 +44,17 @@ nav ul {
   color: var(--dark-blue);
   font-family: "Raleway", sans-serif;
 }
+
+header .rowWithPhoto{
+    display: grid;
+    padding: 5rem 5rem;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    
+}
+header .rowWithPhoto img{
+    max-width: 100%;
+}
+.text{
+
+}
