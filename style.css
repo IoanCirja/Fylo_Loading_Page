@@ -45,14 +45,14 @@ nav ul {
   font-family: "Raleway", sans-serif;
 }
 
-header .rowWithPhoto{
+.rowWithPhoto{
     display: grid;
     padding: 5rem 5rem;
     grid-template-columns: 1fr 1fr;
     column-gap: 5rem;
     
 }
-header .rowWithPhoto img{
+.rowWithPhoto img{
     max-width: 100%;
 }
 .text h1{
@@ -75,3 +75,8 @@ header .rowWithPhoto img{
     border:none;
     color: white;
 }
+
+section{
+    background: url('images\bg-curve-desktop.svg') no-repeat center center/cover;
+}
+
