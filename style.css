@@ -77,6 +77,12 @@ nav ul {
 }
 
 section{
-    background: url('images\bg-curve-desktop.svg') no-repeat center center/cover;
+    background-image: url('images/bg-curve-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+
+
 }
 
