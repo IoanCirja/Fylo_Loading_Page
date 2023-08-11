@@ -4,7 +4,7 @@
   --desaturated-blue: hsl(238, 22%, 44%);
   --bright-blue: hsl(224, 93%, 58%);
   --moderate-cyan: hsl(170, 45%, 43%);
-  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-grayish-blue: hsl(224, 69%, 59%);
   --light-gray: hsl(0, 0%, 75%);
 }
 * {
@@ -44,6 +44,9 @@ nav ul {
   color: var(--dark-blue);
   font-family: "Raleway", sans-serif;
 }
+.rowWithPhoto a{
+  color:var(--moderate-cyan);
+}
 
 .rowWithPhoto, #getAccess{
     display: grid;
@@ -51,6 +54,7 @@ nav ul {
     grid-template-columns: 1fr 1fr;
     column-gap: 5rem;  
 }
+
 
 .rowWithPhoto img{
     max-width: 100%;
@@ -129,8 +133,6 @@ section{
   background-color: var(--desaturated-blue);
   padding: 20px;
   padding-left: 60px;
-
-
 }
 #getAccess p{
   color:white;
@@ -151,6 +153,12 @@ section{
 }
 #accessInput button{
   margin-top: 20px;
+}
+.btn:active{
+  background-color: var(--light-grayish-blue);
+}
+#getAccess button:active{
+  background-color: var(--light-grayish-blue);
 }
 footer .container{
   background-color: var(--dark-blue);
@@ -187,7 +195,20 @@ footer a{
   margin-right: 1.5rem;
 }
 
-@media (max-width: 800px) {
+footer p:hover, footer a:hover{
+  color: var(--bright-blue);
+  cursor: pointer;
+}
+.content-4 img {
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.content-4 img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.5) hue-rotate(224deg);  /* hue doesnt work */
+}
+
+@media (max-width: 1000px) {
   .rowWithPhoto, #getAccess{
     grid-template-columns: 1fr;
     display: flex;
@@ -198,13 +219,28 @@ footer a{
 }
 #navigation{
   margin-top:0;
+  padding:2rem 1rem;
+}
+#navigation img{
+  width:30%;
 }
 li{
   margin-left: 1rem;
 }
 .text h1, .text h2, .text a{
   text-align: center;
+  margin: 2rem 0;
 
+}
+footer .container{
+  padding: 3rem;
+}
+.text h1{
+  font-size: 30px;
+}
+.box{
+  width: auto;
+  height: auto;
 }
 .text input, .text button{
   margin-bottom: 1rem;
@@ -261,6 +297,5 @@ footer .container{
   align-items: center;
   flex-direction: column;
 }
-
 
 }
