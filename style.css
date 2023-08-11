@@ -45,7 +45,7 @@ nav ul {
   font-family: "Raleway", sans-serif;
 }
 
-.rowWithPhoto{
+.rowWithPhoto, #getAccess{
     display: grid;
     padding: 5rem 5rem;
     grid-template-columns: 1fr 1fr;
@@ -62,12 +62,12 @@ nav ul {
 .text p{
     margin: 20px 0;
 }
-.text input{
+.text input, #getAccess input{
     padding: 15px 10px;
     width: 350px;
     border-radius: 0.2rem;
 }
-.text button{
+.text button, #getAccess button{
     padding: 15px 10px;
     width: 200px;
     background-color: var(--bright-blue);
@@ -81,8 +81,73 @@ section{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+.text h2{
+    font-size:30px;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+.box {
+    background-color: white;
+    padding: 30px;
+    margin-top: 3rem;
+    width: 420px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+.box p{
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+}
 
+.profile{
+  display:flex;
+  margin-top: 4rem;
+  align-items: center;
+  margin: 0;
+
+}
+.profile img{
+  border-radius: 50%;
+  width: 15%;
+  height: 15%;
+  margin-right: 20px;
+}
+.profile h3{
+  margin: 0;
+}
+.profile p{
+  margin: 0;
+}
+#getAccess{
+  background:0;
+  background-color: var(--desaturated-blue);
+  padding: 20px;
+  padding-left: 60px;
 
 
 }
+#getAccess p{
+  color:white;
+  padding:20px;
+  padding-top: 0;
+  width: 80%;
+}
+#getAccess h2{
+  color:white;
+  padding: 20px;
+  padding-top: 60px;
+  padding-bottom: 20px; 
+}
+#accessInput{
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+#accessInput button{
+  margin-top: 20px;
+}
+
 
