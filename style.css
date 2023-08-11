@@ -187,7 +187,7 @@ footer a{
   margin-right: 1.5rem;
 }
 
-@media (max-width: 00px) {
+@media (max-width: 676px) {
   .rowWithPhoto, #getAccess{
     grid-template-columns: 1fr;
     display: flex;
@@ -219,9 +219,28 @@ section{
 #navigation ul li a {
   margin: 0;
 }
+#getAccess{
+  display: flex;
+  flex-direction: column;
+}
+footer .container{
+  flex-direction: column;
 
 }
+.content-4{
+  align-self: center;
+}
+#accessInput button{
+  width:350px;
+}
+#accessInput{
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+#accessText p, #accessText h2{
+  text-align: center;
+  margin: auto;
+}
 
-
-
-
+}
