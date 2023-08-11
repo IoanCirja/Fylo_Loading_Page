@@ -187,17 +187,26 @@ footer a{
   margin-right: 1.5rem;
 }
 
-@media (max-width: 676px) {
+@media (max-width: 800px) {
   .rowWithPhoto, #getAccess{
     grid-template-columns: 1fr;
     display: flex;
     flex-direction: column-reverse;
 }
-.text h1, .text p, .text h2{
+.rowWithPhoto, #navigation{
+  padding: 3rem;
+}
+#navigation{
+  margin-top:0;
+}
+li{
+  margin-left: 1rem;
+}
+.text h1, .text h2, .text a{
   text-align: center;
 
 }
-.text input{
+.text input, .text button{
   margin-bottom: 1rem;
   width: 100%;
 }
@@ -222,6 +231,7 @@ section{
 #getAccess{
   display: flex;
   flex-direction: column;
+  padding:20px;
 }
 footer .container{
   flex-direction: column;
@@ -242,5 +252,15 @@ footer .container{
   text-align: center;
   margin: auto;
 }
+#accessText h2{
+  padding: 20px;
+}
+#mobile-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 }
