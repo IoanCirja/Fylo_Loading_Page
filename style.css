@@ -149,5 +149,41 @@ section{
 #accessInput button{
   margin-top: 20px;
 }
+footer .container{
+  background-color: var(--dark-blue);
+  margin: 0;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding:5rem;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+.content-1, .content-2, .content-3, .content-4{
+  line-height: 2.0;
+}
+.logoInfo{
+  display: flex;
+  margin-top: 1rem;
+}
+.logoInfo p{
+  margin-left: 1rem;
+}
+.logoInfo img{
+
+  object-fit: contain;
+}
+.content-2,.content-3,.content-4{
+  padding-top: 70px;
+}
+.content-4 img{
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+
 
 
